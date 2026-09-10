@@ -305,7 +305,7 @@
   .price-row .name{ font-weight:600; font-size:15.5px; }
   .price-row .sub{ display:block; font-size:13px; color:var(--ink-soft); font-weight:400; margin-top:2px; }
   .price-row .val{ font-weight:800; font-size:18px; white-space:nowrap; text-align:right; }
-  .price-row .val-note{ display:block; font-size:11px; font-weight:500; color:var(--ink-soft); margin-top:2px; }
+  .price-row .val-note{ display:block; font-size:11px; font-weight:500; color:var(--ink-soft); margin-top:2px; white-space:normal; }
   .per-note{ text-align:right; font-size:12px; color:var(--ink-soft); margin:-8px 0 18px; }
 
   .pill-row{ display:flex; gap:8px; flex-wrap:wrap; margin:18px 0 22px; }
@@ -376,6 +376,15 @@
     .nav-cta{ padding:9px 14px; font-size:13px; }
     .testi-track img{ height:300px; }
     summary{ font-size:15.5px; }
+    .price-card{ padding:20px; }
+    .price-row{ flex-wrap:wrap; padding:12px 0; }
+    .price-row .val{ font-size:16px; }
+    .note-box{ padding:14px 16px; }
+    .note-box .note-row{ font-size:13px; }
+    .location-list li{ font-size:13.5px; }
+    section{ padding:56px 18px; }
+    .wrap{ padding:0 18px; }
+    .split{ gap:32px; }
   }
 </style>
 </head>
@@ -713,7 +722,7 @@
       <ul class="feature-list">
         <li><span class="dot"></span>Durasi 45 menit lewat Google Meet</li>
         <li><span class="dot"></span>Pertanyaan bebas ditanyakan selama sesi</li>
-        <li><span class="dot"></span>Tersedia untuk personal maupun reading berdua</li>
+        <li><span class="dot"></span>Tersedia untuk personal maupun couple reading</li>
       </ul>
       <a class="btn btn-primary" href="https://wa.me/628726584334?text=Halo%20Kanaka%20Space%2C%20aku%20mau%20booking%20Online%20Live%20Reading" target="_blank" rel="noopener">Book Sekarang</a>
     </div>
@@ -724,7 +733,7 @@
         <div class="val">Rp250.000<span class="val-note">/orang</span></div>
       </div>
       <div class="price-row">
-        <div><span class="name">Reading Berdua</span></div>
+        <div><span class="name">Couple Reading</span></div>
         <div class="val">Rp180.000<span class="val-note">/orang</span></div>
       </div>
     </div>
@@ -752,15 +761,15 @@
       <h3>Harga</h3>
       <div class="price-row">
         <div><span class="name">Premium Personal</span></div>
-        <div class="val">Rp350.000 + Transport<span class="val-note">/orang</span></div>
+        <div class="val">Rp350.000<span class="val-note">+ Transport /orang</span></div>
       </div>
       <div class="price-row">
         <div><span class="name">Berdua</span></div>
-        <div class="val">Rp300.000 + Transport (Sharing)<span class="val-note">/orang</span></div>
+        <div class="val">Rp300.000<span class="val-note">+ Transport (Sharing) /orang</span></div>
       </div>
       <div class="price-row">
         <div><span class="name">Bertiga</span></div>
-        <div class="val">Rp250.000 + Transport (Sharing)<span class="val-note">/orang</span></div>
+        <div class="val">Rp250.000<span class="val-note">+ Transport (Sharing) /orang</span></div>
       </div>
       <p class="location-intro">Pilihan lokasi tatap muka</p>
       <ul class="location-list">

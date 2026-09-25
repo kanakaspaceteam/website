@@ -152,6 +152,10 @@
   .section-head{ max-width:640px; margin:0 auto 52px; text-align:center; }
   .section-head h2{ font-size:clamp(32px, 4vw, 44px); margin-bottom:14px; }
   .section-head p{ color:var(--ink-soft); font-size:16.5px; }
+  .section-head h2.with-icon{ display:inline-flex; align-items:center; gap:12px; }
+  .section-head .head-icon{
+    width:38px; height:38px; flex:none;
+  }
 
   /* ---------- TESTIMONIALS ---------- */
   .testi-slider{
@@ -385,6 +389,7 @@
     section{ padding:56px 18px; }
     .wrap{ padding:0 18px; }
     .split{ gap:32px; }
+    .section-head .head-icon{ width:28px; height:28px; }
   }
 </style>
 </head>
@@ -399,11 +404,12 @@
     <nav>
       <ul id="navList">
         <li><a href="#astrology">Astrology</a></li>
+        <li><a href="#special">Special</a></li>
         <li><a href="#tarot">Tarot</a></li>
         <li><a href="#murah">Reading Murah</a></li>
         <li><a href="#gmeet">Video Call</a></li>
         <li><a href="#tatapmuka">Tatap Muka</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#testimonials">Testi</a></li>
       </ul>
     </nav>
     <a class="btn btn-primary nav-cta" href="https://wa.me/6287826584334?text=Halo%20Kanaka%20Space%2C%20aku%20mau%20booking%20reading" target="_blank" rel="noopener">Book Sekarang</a>
@@ -454,7 +460,33 @@
 
   <div class="accordion wrap" style="padding:0;">
 
-    <details open>
+    <details>
+      <summary>
+        <span class="summary-title">1/2/3 Questions Reading</span>
+        <span class="summary-right">
+          <span class="badges"><span class="badge">Voice Note</span><span class="badge">PDF Report</span></span>
+          <span class="plus">+</span>
+        </span>
+      </summary>
+      <div class="acc-body">
+        <p class="desc">Cocok buat kamu yang udah punya pertanyaan spesifik dan mau langsung to the point, tinggal pilih mau tanya berapa pertanyaan.</p>
+        <ul class="price-list">
+          <li><span class="p-name">1 Question <span class="p-meta">(Voice Note 5 menit)</span></span><span class="p-price">Rp55.000</span></li>
+          <li><span class="p-name">2 Questions <span class="p-meta">(Voice Note 7 menit)</span></span><span class="p-price">Rp75.000</span></li>
+          <li><span class="p-name">3 Questions <span class="p-meta">(Voice Note 15 menit)</span></span><span class="p-price">Rp155.000</span></li>
+          <li><span class="p-name">PDF Report <span class="p-meta">(4-5 halaman). Hanya untuk 2/3 questions + upgrade tarot</span></span><span class="p-price">Rp100.000</span></li>
+        </ul>
+        <p class="delivery-note">Hasil akan dikirim maksimal <strong>3 hari</strong></p>
+        <div class="note-box">
+          <p class="note-title">Upgrade</p>
+          <div class="note-row"><span>Tarot Reading 1/2/3 Questions</span><span class="note-val">+Rp35/65/100.000</span></div>
+          <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
+        </div>
+      </div>
+    </details>
+
+    <details>
       <summary>
         <span class="summary-title">About Me Reading</span>
         <span class="summary-right">
@@ -475,8 +507,7 @@
           <p class="note-title">Upgrade</p>
           <div class="note-row"><span>Tarot Reading</span><span class="note-val">+Rp35.000</span></div>
           <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
-          <div class="note-row"><span>Next 3 Months Reading</span><span class="note-val">+Rp55.000**</span></div>
-          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu<br>**) Next 3 Months Reading akan menambah waktu VN sebanyak 5 menit atau PDF 1 halaman.</p>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
         </div>
       </div>
     </details>
@@ -502,8 +533,7 @@
           <p class="note-title">Upgrade</p>
           <div class="note-row"><span>Tarot Reading</span><span class="note-val">+Rp35.000</span></div>
           <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
-          <div class="note-row"><span>Next 3 Months Reading</span><span class="note-val">+Rp55.000**</span></div>
-          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu<br>**) Next 3 Months Reading akan menambah waktu VN sebanyak 5 menit atau PDF 1 halaman.</p>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
         </div>
       </div>
     </details>
@@ -529,8 +559,7 @@
           <p class="note-title">Upgrade</p>
           <div class="note-row"><span>Tarot Reading</span><span class="note-val">+Rp35.000</span></div>
           <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
-          <div class="note-row"><span>Next 3 Months Reading</span><span class="note-val">+Rp55.000**</span></div>
-          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu<br>**) Next 3 Months Reading akan menambah waktu VN sebanyak 5 menit atau PDF 1 halaman.</p>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
         </div>
       </div>
     </details>
@@ -556,8 +585,7 @@
           <p class="note-title">Upgrade</p>
           <div class="note-row"><span>Tarot Reading</span><span class="note-val">+Rp35.000</span></div>
           <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
-          <div class="note-row"><span>Next 3 Months Reading</span><span class="note-val">+Rp55.000**</span></div>
-          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu<br>**) Next 3 Months Reading akan menambah waktu VN sebanyak 5 menit atau PDF 1 halaman.</p>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
         </div>
       </div>
     </details>
@@ -583,8 +611,7 @@
           <p class="note-title">Upgrade</p>
           <div class="note-row"><span>Tarot Reading</span><span class="note-val">+Rp35.000</span></div>
           <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
-          <div class="note-row"><span>Next 3 Months Reading</span><span class="note-val">+Rp55.000**</span></div>
-          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu<br>**) Next 3 Months Reading akan menambah waktu VN sebanyak 5 menit atau PDF 1 halaman.</p>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
         </div>
       </div>
     </details>
@@ -610,8 +637,7 @@
           <p class="note-title">Upgrade</p>
           <div class="note-row"><span>Tarot Reading</span><span class="note-val">+Rp35.000</span></div>
           <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
-          <div class="note-row"><span>Next 3 Months Reading</span><span class="note-val">+Rp55.000**</span></div>
-          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu<br>**) Next 3 Months Reading akan menambah waktu VN sebanyak 5 menit atau PDF 1 halaman.</p>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
         </div>
       </div>
     </details>
@@ -637,35 +663,114 @@
           <p class="note-title">Upgrade</p>
           <div class="note-row"><span>Tarot Reading</span><span class="note-val">+Rp35.000</span></div>
           <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
-          <div class="note-row"><span>Next 3 Months Reading</span><span class="note-val">+Rp55.000**</span></div>
-          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu<br>**) Next 3 Months Reading akan menambah waktu VN sebanyak 5 menit atau PDF 1 halaman.</p>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
+        </div>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<section class="alt" id="special">
+  <div class="section-head">
+    <h2 class="with-icon"><img class="head-icon" src="https://i.imgur.com/NqAZcTQ.png" alt="">Special Reading<img class="head-icon" src="https://i.imgur.com/NqAZcTQ.png" alt=""></h2>
+    <p>Reading yang lebih personal dan mendalam, khusus untuk kamu yang tahu jam lahir yang dibutuhkan.</p>
+    <div class="pill-row" style="justify-content:center; margin-top:6px;">
+      <span class="pill">Reading Eksklusif</span>
+    </div>
+  </div>
+
+  <div class="accordion wrap" style="padding:0;">
+
+    <details>
+      <summary>
+        <span class="summary-title">Birthday Reading</span>
+        <span class="summary-right">
+          <span class="badges"><span class="badge">Voice Note</span><span class="badge">Butuh Jam Lahir</span></span>
+          <span class="plus">+</span>
+        </span>
+      </summary>
+      <div class="acc-body">
+        <p class="desc">Hanya untuk yang tahu jam lahir kamu. Disini akan memberi gambaran bagaimana kamu di umur yang baru serta pembelajaran apa yang akan kamu hadapi.</p>
+        <ul class="price-list">
+          <li><span class="p-name">Birthday Reading</span><span class="p-price">Rp155.000</span></li>
+        </ul>
+        <p class="delivery-note">Hasil akan dikirim maksimal <strong>3 hari</strong></p>
+        <div class="note-box">
+          <p class="note-title">Upgrade</p>
+          <div class="note-row"><span>Tarot Reading</span><span class="note-val">+Rp35.000</span></div>
+          <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
         </div>
       </div>
     </details>
 
     <details>
       <summary>
-        <span class="summary-title">1/2/3 Questions Reading</span>
+        <span class="summary-title">Next 3 Months Reading</span>
         <span class="summary-right">
-          <span class="badges"><span class="badge">Voice Note</span><span class="badge">PDF Report</span></span>
+          <span class="badges"><span class="badge">Voice Note</span><span class="badge">Butuh Jam Lahir</span></span>
           <span class="plus">+</span>
         </span>
       </summary>
       <div class="acc-body">
-        <p class="desc">Cocok buat kamu yang udah punya pertanyaan spesifik dan mau langsung to the point, tinggal pilih mau tanya berapa pertanyaan.</p>
+        <p class="desc">Gambaran perjalanan hidup kamu untuk 3 bulan ke depan, lengkap dengan momen penting dan pembelajaran yang perlu kamu siapkan.</p>
         <ul class="price-list">
-          <li><span class="p-name">1 Question <span class="p-meta">(Voice Note 5 menit)</span></span><span class="p-price">Rp55.000</span></li>
-          <li><span class="p-name">2 Questions <span class="p-meta">(Voice Note 7 menit)</span></span><span class="p-price">Rp75.000</span></li>
-          <li><span class="p-name">3 Questions <span class="p-meta">(Voice Note 15 menit)</span></span><span class="p-price">Rp155.000</span></li>
-          <li><span class="p-name">PDF Report <span class="p-meta">(4-5 halaman). Hanya untuk 2/3 questions + upgrade tarot</span></span><span class="p-price">Rp100.000</span></li>
+          <li><span class="p-name">Next 3 Months Reading</span><span class="p-price">Rp125.000</span></li>
         </ul>
         <p class="delivery-note">Hasil akan dikirim maksimal <strong>3 hari</strong></p>
         <div class="note-box">
           <p class="note-title">Upgrade</p>
-          <div class="note-row"><span>Tarot Reading 1/2/3 Questions</span><span class="note-val">+Rp35/65/100.000</span></div>
+          <div class="note-row"><span>Tarot Reading</span><span class="note-val">+Rp35.000</span></div>
           <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
-          <div class="note-row"><span>Next 3 Months Reading</span><span class="note-val">+Rp55.000**</span></div>
-          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu<br>**) Next 3 Months Reading akan menambah waktu VN sebanyak 5 menit atau PDF 1 halaman.</p>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span class="summary-title">Your Future Baby</span>
+        <span class="summary-right">
+          <span class="badges"><span class="badge">Voice Note</span><span class="badge">Butuh Jam Lahir</span></span>
+          <span class="plus">+</span>
+        </span>
+      </summary>
+      <div class="acc-body">
+        <p class="desc">Hanya untuk yang tahu jam lahir kamu atau pasangan kamu. Ini hanya gambaran anak pertama. Selain tentang anak, ini juga akan ada pembelajaran kamu sebagai orang tua.</p>
+        <ul class="price-list">
+          <li><span class="p-name">Your Future Baby Reading</span><span class="p-price">Rp125.000</span></li>
+        </ul>
+        <p class="delivery-note">Hasil akan dikirim maksimal <strong>3 hari</strong></p>
+        <div class="note-box">
+          <p class="note-title">Upgrade</p>
+          <div class="note-row"><span>Tarot Reading</span><span class="note-val">+Rp35.000</span></div>
+          <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span class="summary-title">Family &amp; Marriage Reading</span>
+        <span class="summary-right">
+          <span class="badges"><span class="badge">Voice Note</span><span class="badge">Butuh Jam Lahir</span></span>
+          <span class="plus">+</span>
+        </span>
+      </summary>
+      <div class="acc-body">
+        <p class="desc">Hanya untuk yang tahu jam lahir anak sendiri. Pilih salah satu anak dengan birth chart lengkap. Akan ada informasi tentang kedekatan hubungan anak ke orang tua saat dewasa dan pembelajaran sebagai orang tua. Reading ini sudah termasuk birth chart Ayah, Ibu, dan 1 Anak.</p>
+        <ul class="price-list">
+          <li><span class="p-name">Family &amp; Marriage Reading</span><span class="p-price">Rp155.000</span></li>
+        </ul>
+        <p class="delivery-note">Hasil akan dikirim maksimal <strong>3 hari</strong></p>
+        <div class="note-box">
+          <p class="note-title">Upgrade</p>
+          <div class="note-row"><span>Anak Tambahan</span><span class="note-val">+Rp55.000</span></div>
+          <div class="note-row"><span>Tarot Reading</span><span class="note-val">+Rp35.000</span></div>
+          <div class="note-row"><span>Quick Reading, untuk hasil paling lama 24 jam</span><span class="note-val">+Rp35.000*</span></div>
+          <p class="note-foot"><i>Catatan</i><br>*) Quick reading terbatas, pastikan ketersediaannya dulu</p>
         </div>
       </div>
     </details>

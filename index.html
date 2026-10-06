@@ -110,13 +110,12 @@
   .stars{ display:inline-flex; font-size:14px; letter-spacing:1px; line-height:1; margin-left:8px; vertical-align:middle; }
   .stars b{ font-weight:400; color:#f5a623; }
   .stars u{ text-decoration:none; color:var(--peach); }
-  .depth-legend{ display:flex; align-items:center; gap:8px; margin:0 0 6px; font-size:12.5px; color:var(--ink-soft); }
-  .depth-legend .stars{ margin-left:0; font-size:12px; }
-  .depth-list li{ padding:14px 12px; margin:0 -12px; border-radius:10px; border-bottom:none; }
-  .depth-list li + li{ border-top:1px dashed var(--line); border-radius:0; }
-  .p-title{ display:flex; align-items:center; flex-wrap:wrap; row-gap:4px; }
-  .p-title .stars{ margin-left:10px; }
-  .tag-best{ margin-left:10px; font-size:11px; font-weight:700; padding:3px 9px; border-radius:100px; background:var(--coral); color:var(--ink); white-space:nowrap; }
+  .depth-list li{ padding:14px 0; }
+  .depth-list li + li{ border-top:1px dashed var(--line); }
+  .depth-list .p-name{ flex:1; min-width:0; }
+  .p-title{ display:flex; align-items:center; flex-wrap:wrap; gap:4px 10px; }
+  .p-title .stars{ margin-left:0; }
+  .tag-best{ font-size:11px; font-weight:700; padding:3px 9px; border-radius:100px; background:var(--coral); color:var(--ink); white-space:nowrap; }
 
   /* UPGRADE NOTE */
   .delivery-note{ font-size:13px; color:var(--ink-soft); margin:14px 0 0; padding:0; }
@@ -204,6 +203,10 @@
     .note-box{ padding:14px 16px; }
     .note-box .note-row{ font-size:13px; }
     .location-list li{ font-size:13.5px; }
+    .depth-list li{ gap:12px; padding:12px 0; align-items:flex-start; }
+    .depth-list .p-price{ font-size:14px; padding-top:1px; }
+    .depth-list .p-meta{ font-size:12.5px; }
+    .tag-best{ font-size:10.5px; padding:2px 8px; }
     section{ padding:56px 18px; }
     .wrap{ padding:0 18px; }
     .split{ gap:32px; }
@@ -314,7 +317,6 @@
       </summary>
       <div class="acc-body">
         <p class="desc">Astrology reading mengenai semua hal tentang kamu dan hidup kamu. Kedalaman reading tergantung jenis layanan yang dipilih.</p>
-        <p class="depth-legend"><span class="stars" aria-hidden="true"><b>★★★★★</b></span> Makin banyak bintang, makin dalam reading-nya</p>
         <ul class="price-list depth-list">
           <li><span class="p-name"><span class="p-title">Full Reading<span class="stars" role="img" aria-label="Kedalaman 5 dari 5"><b>★★★★★</b><u></u></span><span class="tag-best">Paling Lengkap</span></span><span class="p-meta">Voice Note 20 Menit + 2 Pertanyaan</span></span><span class="p-price">Rp185.000</span></li>
           <li><span class="p-name"><span class="p-title">Deep Reading<span class="stars" role="img" aria-label="Kedalaman 4 dari 5"><b>★★★★</b><u>★</u></span></span><span class="p-meta">Voice Note 15 Menit + 1 Pertanyaan</span></span><span class="p-price">Rp155.000</span></li>
@@ -342,7 +344,6 @@
       </summary>
       <div class="acc-body">
         <p class="desc">Astrology reading mengenai semua hal tentang orang lain dan hidupnya.</p>
-        <p class="depth-legend"><span class="stars" aria-hidden="true"><b>★★★★★</b></span> Makin banyak bintang, makin dalam reading-nya</p>
         <ul class="price-list depth-list">
           <li><span class="p-name"><span class="p-title">Full Reading<span class="stars" role="img" aria-label="Kedalaman 5 dari 5"><b>★★★★★</b><u></u></span><span class="tag-best">Paling Lengkap</span></span><span class="p-meta">Voice Note 20 Menit + 2 Pertanyaan</span></span><span class="p-price">Rp185.000</span></li>
           <li><span class="p-name"><span class="p-title">Deep Reading<span class="stars" role="img" aria-label="Kedalaman 4 dari 5"><b>★★★★</b><u>★</u></span></span><span class="p-meta">Voice Note 15 Menit + 1 Pertanyaan</span></span><span class="p-price">Rp155.000</span></li>
@@ -370,7 +371,6 @@
       </summary>
       <div class="acc-body">
         <p class="desc">Astrology reading mengenai semua hal tentang kamu, orang lain, dan hubungan kalian berdua.</p>
-        <p class="depth-legend"><span class="stars" aria-hidden="true"><b>★★★★★</b></span> Makin banyak bintang, makin dalam reading-nya</p>
         <ul class="price-list depth-list">
           <li><span class="p-name"><span class="p-title">Full Reading<span class="stars" role="img" aria-label="Kedalaman 5 dari 5"><b>★★★★★</b><u></u></span><span class="tag-best">Paling Lengkap</span></span><span class="p-meta">Voice Note 20 Menit + 2 Pertanyaan</span></span><span class="p-price">Rp185.000</span></li>
           <li><span class="p-name"><span class="p-title">Deep Reading<span class="stars" role="img" aria-label="Kedalaman 4 dari 5"><b>★★★★</b><u>★</u></span></span><span class="p-meta">Voice Note 15 Menit + 1 Pertanyaan</span></span><span class="p-price">Rp155.000</span></li>
@@ -398,7 +398,6 @@
       </summary>
       <div class="acc-body">
         <p class="desc">Astrology reading mengenai potensi soulmate kamu, cara attract orang yang tepat, ciri-cirinya, dan pembelajaran buat kamu.</p>
-        <p class="depth-legend"><span class="stars" aria-hidden="true"><b>★★★★★</b></span> Makin banyak bintang, makin dalam reading-nya</p>
         <ul class="price-list depth-list">
           <li><span class="p-name"><span class="p-title">Full Reading<span class="stars" role="img" aria-label="Kedalaman 5 dari 5"><b>★★★★★</b><u></u></span><span class="tag-best">Paling Lengkap</span></span><span class="p-meta">Voice Note 20 Menit + 2 Pertanyaan</span></span><span class="p-price">Rp185.000</span></li>
           <li><span class="p-name"><span class="p-title">Deep Reading<span class="stars" role="img" aria-label="Kedalaman 4 dari 5"><b>★★★★</b><u>★</u></span></span><span class="p-meta">Voice Note 15 Menit + 1 Pertanyaan</span></span><span class="p-price">Rp155.000</span></li>
@@ -426,7 +425,6 @@
       </summary>
       <div class="acc-body">
         <p class="desc">Cocok buat kamu yang ingin mengembangkan karir, baru lulus, ingin buka usaha, mau jadi influencer, atau sekadar ingin tahu bakat yang dimiliki.</p>
-        <p class="depth-legend"><span class="stars" aria-hidden="true"><b>★★★★★</b></span> Makin banyak bintang, makin dalam reading-nya</p>
         <ul class="price-list depth-list">
           <li><span class="p-name"><span class="p-title">Full Reading<span class="stars" role="img" aria-label="Kedalaman 5 dari 5"><b>★★★★★</b><u></u></span><span class="tag-best">Paling Lengkap</span></span><span class="p-meta">Voice Note 20 Menit + 2 Pertanyaan</span></span><span class="p-price">Rp185.000</span></li>
           <li><span class="p-name"><span class="p-title">Deep Reading<span class="stars" role="img" aria-label="Kedalaman 4 dari 5"><b>★★★★</b><u>★</u></span></span><span class="p-meta">Voice Note 15 Menit + 1 Pertanyaan</span></span><span class="p-price">Rp155.000</span></li>
@@ -454,7 +452,6 @@
       </summary>
       <div class="acc-body">
         <p class="desc">Menelusuri arah hidup dan tujuan besar kamu lewat birth chart, biar makin yakin melangkah ke mana.</p>
-        <p class="depth-legend"><span class="stars" aria-hidden="true"><b>★★★★★</b></span> Makin banyak bintang, makin dalam reading-nya</p>
         <ul class="price-list depth-list">
           <li><span class="p-name"><span class="p-title">Full Reading<span class="stars" role="img" aria-label="Kedalaman 5 dari 5"><b>★★★★★</b><u></u></span><span class="tag-best">Paling Lengkap</span></span><span class="p-meta">Voice Note 20 Menit + 2 Pertanyaan</span></span><span class="p-price">Rp185.000</span></li>
           <li><span class="p-name"><span class="p-title">Deep Reading<span class="stars" role="img" aria-label="Kedalaman 4 dari 5"><b>★★★★</b><u>★</u></span></span><span class="p-meta">Voice Note 15 Menit + 1 Pertanyaan</span></span><span class="p-price">Rp155.000</span></li>
@@ -482,7 +479,6 @@
       </summary>
       <div class="acc-body">
         <p class="desc">Mengenai apa yang orang lain pikirkan tentang kamu, dan pembelajaran apa yang bisa kamu ambil dari situ.</p>
-        <p class="depth-legend"><span class="stars" aria-hidden="true"><b>★★★★★</b></span> Makin banyak bintang, makin dalam reading-nya</p>
         <ul class="price-list depth-list">
           <li><span class="p-name"><span class="p-title">Full Reading<span class="stars" role="img" aria-label="Kedalaman 5 dari 5"><b>★★★★★</b><u></u></span><span class="tag-best">Paling Lengkap</span></span><span class="p-meta">Voice Note 20 Menit + 2 Pertanyaan</span></span><span class="p-price">Rp185.000</span></li>
           <li><span class="p-name"><span class="p-title">Deep Reading<span class="stars" role="img" aria-label="Kedalaman 4 dari 5"><b>★★★★</b><u>★</u></span></span><span class="p-meta">Voice Note 15 Menit + 1 Pertanyaan</span></span><span class="p-price">Rp155.000</span></li>
